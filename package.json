@@ -1,0 +1,21 @@
+{
+  "name": "ai-collect-hub",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/build-tools.js",
+    "build": "npm run prebuild && vite build",
+    "dev": "npm run prebuild && vite"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.0",
+    "gray-matter": "^4.0.3",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.0"
+  }
+}
