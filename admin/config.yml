@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: twoken404/ai-collect-hub
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "tools"
+    label: "AI 工具"
+    folder: "content/tools"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "描述", name: "description", widget: "text" }
+      - { label: "链接", name: "url", widget: "string" }
+      - { label: "标签", name: "tags", widget: "list", default: ["新工具"] }
+      - { label: "图标", name: "icon", widget: "string", default: "🔧", required: false }
+      - { label: "正文", name: "body", widget: "markdown", required: false }
